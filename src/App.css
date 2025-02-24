@@ -1,46 +1,76 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.body{
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  display: block;
+  background-color: #9D1619;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* navigation bar  */
+
+
+.nav-item {
+  padding: 15px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item > a {
+  font-size: 18px;
+  color: #1A2980 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link.active {
+  font-weight: bold ;
 }
 
-.card {
-  padding: 2em;
+/* Home */
+
+.homeBackground {
+  margin: 0;
+  width : 100%;
+  min-height: 100vh;
+  background-image: url("./assets//Home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.read-the-docs {
-  color: #888;
+.redGradient{
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(252deg, rgba(2,0,36,0) 0%, rgba(110,7,8,0.3618697478991597) 47%, rgba(110,7,8,1) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+
 }
 
-.home{
-  font-size: 70px;
+.hero{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0 100px !important;
+}
+
+.heroContent h1 {
+  font-size: clamp(2.5rem, 4vw, 5rem);
+  text-align: start;
+  align-self: center;
+}
+
+.heroContent p {
+  width:80%;
+  font-size: 1.25;
+  text-align: start;
+  align-self: center;
+  font-style: italic;
+}
+
+.heroContent h3 {
+  width:80%;
+  font-size: 1.25;
+  text-align: start;
+  align-self: center;
+}
+
+.heroDescription{
+
 }
