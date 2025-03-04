@@ -119,7 +119,122 @@
   font-weight: bolder !important;
 }
 
+.ourClients {
+  font-family: var(--primary-font);
+}
 
+.ourClients  h2 {
+  color: #440908;
+}
+
+.cardDetail {
+  margin: 0;
+  padding: 0;
+  min-width: 20px;
+  width: 20rem;
+  border: 2px solid #640303 !important;
+  box-shadow: 5px 5px 15px #9b4345;
+}
+
+.cardDetail h5 {
+  font-weight: bold;
+}
+
+.testimonials {
+  font-family: var(--primary-font);
+}
+
+.testimonials  h2 {
+  color: #440908;
+}
+
+.review {
+  min-height: 200px;
+  font-family: var( --primary-font);
+}
+
+
+.review h3{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.review h6{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.review p {
+  width: 450px;
+}
+
+/* about us */
+
+.aboutUsBanner {
+  height: 600px;
+  width: 100%;
+  /* position: absolute; */
+  background-image: url("./assets//aboutUsBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.overlay {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: var( --primary-font);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow to the text */
+  font-weight: bold;
+}
+
+.aboutUs {
+  font-family: var( --primary-font);
+}
+
+.aboutUs h2 {
+  color: #440908;
+  font-weight: bold
+}
+
+.aboutUs p {
+  font-size: 18px;
+}
+
+.ourTeam {
+  font-family: var(--primary-font);
+}
+
+.ourTeam  h2 {
+  color: #440908;
+}
+
+.memberName {
+  color: #B39882 !important;
+  font-weight: bold;
+}
+
+.role {
+  color: #183862 !important;
+  font-weight: bold;
+}
+
+.line {
+  border: 1px solid #020202 !important;
+}
 
 /* footer */
 

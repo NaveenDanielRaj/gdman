@@ -1,6 +1,6 @@
-import React, { useState , Suspense} from 'react'
+import React, { Suspense} from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Navbar = React.lazy(()=>import('./components/navbar'))
 
@@ -19,11 +19,11 @@ function App() {
           <Suspense fallback={<div>Loading</div>}>
             <Navbar />
             <Routes>
-              <Route path="/gdman" element={<Home />} />
-              <Route path="/gdman/aboutUs" element={<About />} />
-              <Route path="/gdman/practiceAreas" element={<PracticeAreas />} />
-              <Route path="/gdman/caseResults" element={<CaseResults />} />
-              <Route path="/gdman/contactUs" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/aboutUs" element={<About />} />
+              <Route path="/practiceAreas" element={<PracticeAreas />} />
+              <Route path="/caseResults" element={<CaseResults />} />
+              <Route path="/contactUs" element={<Contact />} />
             </Routes>
             <Footer />
           </Suspense>

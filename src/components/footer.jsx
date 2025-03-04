@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Logo from '../assets/Logo.png';
 
 import facebook from '../assets/facebook.png';
@@ -20,18 +20,18 @@ const Footer = () => {
                     <h4 className='linkHead'>Links</h4>
                     <ul className='m-0 p-0'>
                         <li className='footerLinks'><a href='/'>Home</a></li>
-                        <li className='footerLinks'><a href='/gdman/aboutUs'>About</a></li>
-                        <li className='footerLinks'><a href='/gdman/practiceAreas'>Practice Areas</a></li>
-                        <li className='footerLinks'><a href='/gdman/caseResults'>Case results</a></li>
-                        <li className='footerLinks'><a href='/gdman/contactUs'>Contect Us</a></li>
+                        <li className='footerLinks'><a href='/aboutUs'>About</a></li>
+                        <li className='footerLinks'><a href='/practiceAreas'>Practice Areas</a></li>
+                        <li className='footerLinks'><a href='/caseResults'>Case results</a></li>
+                        <li className='footerLinks'><a href='/contactUs'>Contect Us</a></li>
                     </ul>
                 </div>
                 <div className=' col-12  col-md-6 col-lg-4  px-5 py-4 text-center text-md-start '>
                     <div >
 
                         <h4 className='linkHead'>Reach Us</h4>
-                        <p>Call or Text : <span className='contact'>(123) 123-1234</span> </p>
-                        <p >Email : <span className='contact'>goodmanlawfir@gmail.com</span></p>
+                        <p>Call or Text : <span className='contact'>(123) 123-1234</span></p>
+                        <p >Email : <span className='contact'>goodmanlawfirm@gmail.com</span></p>
                     </div>
 
                     <div>

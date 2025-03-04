@@ -1,4 +1,4 @@
-import React from 'react'
+
 import penImage from '../assets/featherPen.webp';
 
 const quote = ( {quote , author}) => {
