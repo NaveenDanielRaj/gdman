@@ -236,6 +236,35 @@
   border: 1px solid #020202 !important;
 }
 
+/* practice areas */
+
+.practiceAreasBanner {
+  height: 600px;
+  width: 100%;
+  /* position: absolute; */
+  background-image: url("./assets//practiceAreasBanner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.practiceAreas {
+  font-family: var( --primary-font);
+}
+
+.practiceAreas h2 {
+  color: #440908;
+  font-weight: bold
+}
+
+.practiceAreas p {
+  font-size: 18px;
+}
+
+.practiceAreas a{
+  color: black;
+}
 /* footer */
 
 .footer {
