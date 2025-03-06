@@ -265,6 +265,40 @@
 .practiceAreas a{
   color: black;
 }
+
+/*  */
+
+.contactUsBanner {
+  height: 600px;
+  width: 100%;
+  /* position: absolute; */
+  background-image: url("./assets/contactUsBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.contactUs {
+  font-family: var( --primary-font);
+}
+
+.contactUs h2 {
+  color: #440908;
+  font-weight: bold
+}
+
+
+.contactUs h3 {
+  color: #183862;
+  font-weight: bold
+}
+
+.contact1 {
+  color: #607DBC;
+}
+
+
 /* footer */
 
 .footer {
