@@ -24,7 +24,7 @@ const PracticeAreas = () => {
                   <img src={family} class="card-img-top" alt="family" height={300} />
                   <div class="card-body text-center py-4">
                     <h4 class="card-title fw-bold">Family Law</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <a href="/practiceAreas/family-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -32,8 +32,8 @@ const PracticeAreas = () => {
                 <div className="card">
                   <img src={divorce} class="card-img-top" alt="divorce"  height={300} />
                   <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Divorce</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <h4 class="card-title fw-bold">Divorce Law</h4>
+                    <a href="/practiceAreas/divorce-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -41,8 +41,8 @@ const PracticeAreas = () => {
                 <div className="card">
                   <img src={probate} class="card-img-top" alt="probate"  height={300} />
                   <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Probate</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <h4 class="card-title fw-bold">Probate Law</h4>
+                    <a href="/practiceAreas/probate-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -50,8 +50,8 @@ const PracticeAreas = () => {
                 <div className="card">
                   <img src={criminal} class="card-img-top" alt="criminal"  height={300}/>
                   <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Criminal Defense</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <h4 class="card-title fw-bold">Criminal Defense Law</h4>
+                    <a href="/practiceAreas/criminal-defence-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -59,8 +59,8 @@ const PracticeAreas = () => {
                 <div className="card">
                   <img src={traffic} class="card-img-top" alt="traffic"  height={300}/>
                   <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Traffic Defense</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <h4 class="card-title fw-bold">Traffic Defense Law</h4>
+                    <a href="/practiceAreas/traffic-defence-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -68,8 +68,8 @@ const PracticeAreas = () => {
                 <div className="card">
                   <img src={insurance} class="card-img-top" alt="insurance"  height={300} />
                   <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Insurance</h4>
-                    <a href="#">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                    <h4 class="card-title fw-bold">Insurance Law</h4>
+                    <a href="/practiceAreas/insurance-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>

@@ -15,6 +15,41 @@
   background-color: var(--white-color);
 }
 
+
+/* loading */
+
+.loading { 
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+  
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: #9C0B0B #9C0B0B #0000 #0000;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: #0000 #0000 #1A2980 #1A2980;
+  animation-direction: reverse;
+}
+@keyframes l14{ 
+  100%{transform: rotate(1turn)}
+}
+
+
 /* navigation bar  */
 
 
@@ -266,7 +301,35 @@
   color: black;
 }
 
-/*  */
+/* practice areas tabs */
+
+.practiceAreaItems{
+  font-family: var( --primary-font);
+  color: #1A2980 !important ;
+  cursor: pointer;
+}
+.notPracticeAreasIndivideal {
+  color: #1A2980 !important ;
+  font-weight: 600 !important;
+}
+
+.practiceAreasIndivideal {
+  background-color: #1A2980 !important;
+  color: #ffffff !important;
+}
+
+/* family */ 
+
+.family {
+  font-family: var( --primary-font);
+}
+
+.family h2 {
+  color: #440908;
+  font-weight: bold
+}
+
+/* contact us */
 
 .contactUsBanner {
   height: 600px;
