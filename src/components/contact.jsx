@@ -1,6 +1,15 @@
 
+import { useForm } from "react-hook-form";
+import formImage from '../assets/contactForm.png'
 
 const Contact = () => {
+
+  const { register, handleSubmit,formState : {errors} ,reset } = useForm();
+
+
+  const onFormSubmit = data => console.log(data);
+
+
   return (
     <>
       <div className="contactUsBanner">
@@ -33,7 +42,7 @@ const Contact = () => {
            
         </div>
 
-        <hr className='border border-1 border-danger-subtle my-1'></hr>
+        <hr className='border border-1 border-danger-subtle my-1 mt-5'></hr>
 
         <div className="py-2 row align-items-center justify-content-between">
             <h2 className="text-center py-4">Branch Office 1</h2>
@@ -57,7 +66,7 @@ const Contact = () => {
         </div>
 
         
-        <hr className='border border-1 border-danger-subtle my-1'></hr>
+        <hr className='border border-1 border-danger-subtle my-1 mt-5'></hr>
 
         <div className="py-2 row align-items-center justify-content-between">
           <h2 className="text-center py-4">Branch Office 2</h2>
@@ -80,7 +89,87 @@ const Contact = () => {
            
         </div>
 
-        <hr className='border border-1 border-danger-subtle my-1'></hr>
+        <hr className='border border-1 border-danger-subtle my-1 mt-5'></hr>
+
+        <div className="contactForm rounded-5 my-3 p-5">
+            <h3 className="fw-bold text-center">Schedule A Free Consultation Today</h3>
+            <p className="fw-bold text-center">Need legal representation? Fill out our contact form with some information about your case or concern. We will respond to any inquiry as soon as possible.
+            </p>
+
+            <div className="contactForm1 d-flex align-items-center justify-content-center">
+              <div>
+                <form className="w-100 row" onSubmit={handleSubmit(onFormSubmit)}>
+                  <div className=" col-12">
+                    <div className="py-2">
+                      <label htmlFor="name">Name <span>(required)</span></label>
+                    </div>
+                    <div className="py-2">
+                      <input
+                        className="input rounded-2"
+                        id="name"
+                        type="text"
+                        {...register('name', { required: 'Name is required' })}
+                      />
+                    </div>
+                    <div className="py-2">
+                      {errors.name && <span>{errors.name.message}</span>}
+                    </div>
+                  </div>
+
+                  <div className="col-12">
+                    <div>
+
+                    </div>
+                    <label htmlFor="email">Email <span>(required)</span></label>
+                    <input
+                      id="email"
+                      type="email"
+                      {...register('email', {
+                        required: 'Email is required',
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                          message: 'Invalid email address',
+                        },
+                      })}
+                    />
+                    {errors.email && <span>{errors.email.message}</span>}
+                  </div>
+
+                  <div className="col-12">
+                    <label htmlFor="mobile">Mobile Number:</label>
+                    <input
+                      id="mobile"
+                      type="text"
+                      {...register('mobile', {
+                        required: 'Mobile number is required',
+                        pattern: {
+                          value: /^[0-9]{10}$/,
+                          message: 'Mobile number must be 10 digits',
+                        },
+                      })}
+                    />
+                    {errors.mobile && <span>{errors.mobile.message}</span>}
+                  </div>
+
+                  <div className="col-12">
+                    <label htmlFor="message">Message <span>(required)</span></label>
+                    <textarea
+                      id="message"
+                      {...register('message', { required: 'Message is required' })}
+                    ></textarea>
+                    {errors.message && <span>{errors.message.message}</span>}
+                  </div>
+
+                  <div>
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div>
+                    <img width={500} className="img-fluid" src={formImage}/>
+              </div>
+            </div>
+        </div>
 
       </div>
     </>

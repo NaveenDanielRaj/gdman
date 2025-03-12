@@ -362,6 +362,29 @@
 }
 
 
+.contactForm {
+  background-color: #b67777;
+  color: #ffffff !important;
+}
+
+.contactForm h3{
+  color: #ffffff !important;
+}
+
+.contactForm p{
+  font-size: 13px;
+}
+
+.contactForm1{
+  width: 100%;
+}
+
+.input {
+  border: 1px solid #440908 !important ;
+  background-color: #d2aeae !important;
+  height: 35px;
+  min-width: 300px;
+}
 /* footer */
 
 .footer {
