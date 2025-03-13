@@ -7,6 +7,8 @@ import twitter from '../assets/twitter.png';
 import instagram from '../assets/instagram.png';
 import youtube from '../assets/youtube.png'
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <>
@@ -19,11 +21,11 @@ const Footer = () => {
                 <div className='col-12  col-md-6 col-lg-4  px-5 py-4 text-center text-md-start'>
                     <h4 className='linkHead'>Links</h4>
                     <ul className='m-0 p-0'>
-                        <li className='footerLinks'><a href='/'>Home</a></li>
-                        <li className='footerLinks'><a href='/aboutUs'>About</a></li>
-                        <li className='footerLinks'><a href='/practiceAreas'>Practice Areas</a></li>
-                        <li className='footerLinks'><a href='/caseResults'>Case results</a></li>
-                        <li className='footerLinks'><a href='/contactUs'>Contect Us</a></li>
+                        <li className='footerLinks'><Link to='/'>Home</Link></li>
+                        <li className='footerLinks'><Link to='/aboutUs'>About</Link></li>
+                        <li className='footerLinks'><Link to='/practiceAreas'>Practice Areas</Link></li>
+                        <li className='footerLinks'><Link to='/caseResults'>Case results</Link></li>
+                        <li className='footerLinks'><Link to='/contactUs'>Contect Us</Link></li>
                     </ul>
                 </div>
                 <div className=' col-12  col-md-6 col-lg-4  px-5 py-4 text-center text-md-start '>

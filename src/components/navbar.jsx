@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link , useLocation} from 'react-router-dom'
 import Logo from '../assets/Logo.png'
 
 const Navbar = () => {
 
     const [activePage , setActivePage] = useState(1)
+    const location = useLocation();
 
     const handleSetPage = (page)=>{
         setActivePage(page)
     }
+
+    useEffect(()=>{
+        let path = (location.pathname === '/') ? 1 :  (location.pathname === '/aboutUs') ? 2 : (location.pathname === '/practiceAreas' ||location.pathname === '/practiceAreas/family-law' || location.pathname === '/practiceAreas/divorce-law' || location.pathname === '/practiceAreas/probate-law' || location.pathname === '/practiceAreas/criminal-defence-law' || location.pathname === '/practiceAreas/traffic-defence-law' || location.pathname === '/practiceAreas/insurance-law') ? 3 :  (location.pathname === '/caseResults') ? 4 :  (location.pathname === '/contactUs') ? 5 : 1
+        setActivePage(path)
+    },[location.pathname])
+
   return (
     <>
         <div className='m-0 p-0 border-bottom border-dark border-1'>

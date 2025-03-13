@@ -21,55 +21,55 @@ const PracticeAreas = () => {
           <div className="row py-2 align-items-center justify-content-around">
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={family} class="card-img-top" alt="family" height={300} />
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Family Law</h4>
-                    <a href="/practiceAreas/family-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={family} className="card-img-top" alt="family" height={300} />
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Family Law</h4>
+                    <a href="/practiceAreas/family-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={divorce} class="card-img-top" alt="divorce"  height={300} />
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Divorce Law</h4>
-                    <a href="/practiceAreas/divorce-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={divorce} className="card-img-top" alt="divorce"  height={300} />
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Divorce Law</h4>
+                    <a href="/practiceAreas/divorce-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={probate} class="card-img-top" alt="probate"  height={300} />
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Probate Law</h4>
-                    <a href="/practiceAreas/probate-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={probate} className="card-img-top" alt="probate"  height={300} />
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Probate Law</h4>
+                    <a href="/practiceAreas/probate-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={criminal} class="card-img-top" alt="criminal"  height={300}/>
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Criminal Defense Law</h4>
-                    <a href="/practiceAreas/criminal-defence-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={criminal} className="card-img-top" alt="criminal"  height={300}/>
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Criminal Defense Law</h4>
+                    <a href="/practiceAreas/criminal-defence-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={traffic} class="card-img-top" alt="traffic"  height={300}/>
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Traffic Defense Law</h4>
-                    <a href="/practiceAreas/traffic-defence-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={traffic} className="card-img-top" alt="traffic"  height={300}/>
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Traffic Defense Law</h4>
+                    <a href="/practiceAreas/traffic-defence-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
-                  <img src={insurance} class="card-img-top" alt="insurance"  height={300} />
-                  <div class="card-body text-center py-4">
-                    <h4 class="card-title fw-bold">Insurance Law</h4>
-                    <a href="/practiceAreas/insurance-law">Learn More <i class="fa fa-solid fa-arrow-right"></i></a>
+                  <img src={insurance} className="card-img-top" alt="insurance"  height={300} />
+                  <div className="card-body text-center py-4">
+                    <h4 className="card-title fw-bold">Insurance Law</h4>
+                    <a href="/practiceAreas/insurance-law">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
