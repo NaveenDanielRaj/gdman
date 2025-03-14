@@ -96,8 +96,8 @@ const Contact = () => {
             <p className="fw-bold text-center">Need legal representation? Fill out our contact form with some information about your case or concern. We will respond to any inquiry as soon as possible.
             </p>
 
-            <div className="contactForm1 d-flex align-items-center justify-content-center">
-              <div>
+            <div className="contactForm1 row align-items-center justify-content-center">
+              <div className="col-12 col-md-6">
                 <form className="w-100 row" onSubmit={handleSubmit(onFormSubmit)}>
                   <div className=" col-12">
                     <div className="py-2">
@@ -105,67 +105,87 @@ const Contact = () => {
                     </div>
                     <div className="py-2">
                       <input
-                        className="input rounded-2"
+                        className="input rounded-2 w-100"
                         id="name"
                         type="text"
                         {...register('name', { required: 'Name is required' })}
                       />
                     </div>
+                    <div className="py-1">
+                      {errors.name && <span className="error">*{errors.name.message}</span>}
+                    </div>
+                  </div>
+
+                  <div className="col-12">
                     <div className="py-2">
-                      {errors.name && <span>{errors.name.message}</span>}
+                      <label htmlFor="email">Email <span>(required)</span></label>
+
+                    </div>
+                    <div className="py-2">
+                      <input
+                      className="input rounded-2 w-100"
+                        id="email"
+                        type="email"
+                        {...register('email', {
+                          required: 'Email is required',
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                            message: 'Invalid email address',
+                          },
+                        })}
+                      />
+                    </div>
+                    <div className="py-1">
+                      {errors.email && <span className="error">*{errors.email.message}</span>}
                     </div>
                   </div>
 
                   <div className="col-12">
-                    <div>
-
+                    <div className="py-2">
+                      <label htmlFor="mobile">Mobile Number <span>(required)</span></label>
                     </div>
-                    <label htmlFor="email">Email <span>(required)</span></label>
-                    <input
-                      id="email"
-                      type="email"
-                      {...register('email', {
-                        required: 'Email is required',
-                        pattern: {
-                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                          message: 'Invalid email address',
-                        },
-                      })}
-                    />
-                    {errors.email && <span>{errors.email.message}</span>}
+                    <div className="py-2">
+                      <input
+                      className="input rounded-2 w-100"
+                        id="mobile"
+                        type="text"
+                        {...register('mobile', {
+                          required: 'Mobile number is required',
+                          pattern: {
+                            value: /^[0-9]{10}$/,
+                            message: 'Mobile number must be 10 digits',
+                          },
+                        })}
+                      />
+                    </div>
+                    <div className="py-1">
+                      {errors.mobile && <span className="error">*{errors.mobile.message}</span>}
+                    </div>
                   </div>
 
                   <div className="col-12">
-                    <label htmlFor="mobile">Mobile Number:</label>
-                    <input
-                      id="mobile"
-                      type="text"
-                      {...register('mobile', {
-                        required: 'Mobile number is required',
-                        pattern: {
-                          value: /^[0-9]{10}$/,
-                          message: 'Mobile number must be 10 digits',
-                        },
-                      })}
-                    />
-                    {errors.mobile && <span>{errors.mobile.message}</span>}
+                  <div className="py-2">
+                    <label htmlFor="message">How Can We Help? <span>(required)</span></label>
+                    <p className="py-1 w-75 lead">Please do not include confidential or sensitive information in your message. In the event that we are representing a party with opposing interests to your own, we may have a duty to disclose any information you provide to our client.</p>
                   </div>
-
-                  <div className="col-12">
-                    <label htmlFor="message">Message <span>(required)</span></label>
+                  <div className="">
                     <textarea
+                      className="input rounded-2 w-100 "
                       id="message"
                       {...register('message', { required: 'Message is required' })}
                     ></textarea>
-                    {errors.message && <span>{errors.message.message}</span>}
+                  </div>
+                  <div className="py-1">
+                    {errors.message && <span className="error">*{errors.message.message}</span>}
+                  </div>
                   </div>
 
-                  <div>
-                    <button type="submit">Submit</button>
+                  <div className="pt-3">
+                    <button className="btn submitButton rounded-5 px-5 float-center" type="submit">Submit</button>
                   </div>
                 </form>
               </div>
-              <div>
+              <div className="col-12 col-md-4 d-none d-lg-block">
                     <img width={500} className="img-fluid" src={formImage}/>
               </div>
             </div>

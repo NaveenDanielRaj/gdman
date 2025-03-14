@@ -385,6 +385,25 @@
   height: 35px;
   min-width: 300px;
 }
+
+textarea {
+  min-height: 150px;
+}
+
+label {
+  font-weight: 500;
+}
+
+.error {
+  color : rgb(149, 33, 33);
+  font-weight: 500;
+  font-size: 13px
+}
+
+.submitButton { 
+  background-color: #9C0B0B !important;
+  color: #ffffff !important;
+}
 /* footer */
 
 .footer {
