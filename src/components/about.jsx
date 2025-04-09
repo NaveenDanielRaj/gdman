@@ -90,34 +90,37 @@ const About = () => {
               <img className='img-fluid' src={male} /> 
             </div>
             <div className='col-md-5 py-4'>
-                <h2 className='memberName'>Mr. Name</h2>
-                <h3 className='role'> His Role in Office</h3>
+                <h2 className='memberName'>Mr. A. Santhosh Kumar, B.A., LL.B.</h2>
+                <h3 className='role'>Senior Attorney</h3>
+                <h5 className='experience'>14 Years of Experience</h5>
                 <div className='line my-3'></div>
-                <p>Rafael Sweet is the Founder and Lead Trial Attorney at Sweet Justice. He has earned millions of dollars in settlements and verdicts for his clients. He looks forward to litigating whenever necessary and preparing his cases for trial. Rafael has several years of experience representing some of the world’s largest corporations. Rafael has now spent years bringing that expertise to his representation of individuals seeking the maximum compensation for their injuries. Rafael loves being a personal injury lawyer and working to help peoples’ lives. Rafael attended UCLA and Loyola Law School and he is bilingual in English and Spanish. Rafael has successfully helped his clients recover what they deserve from corporations and insurance companies in many types of accidents. Rafael was listed in Top 100 Attorneys Magazine for 2022.</p>
+                <p>A. Santhosh Kumar specializes in <span className='fw-bold'> family law, criminal defense, civil litigation, and financial disputes</span> with over 14 years of extensive legal experience. His deep understanding of legal complexities allows him to craft strategic solutions for clients while ensuring justice is served.</p>
             </div>
          </div>
          <hr className='border border-1 border-danger-subtle my-5'></hr>
          <div className='row align-items-center justify-content-around'>
             <div className='col-md-5'>
-              <img className='img-fluid' src={female} /> 
+              <img className='img-fluid' src={male} /> 
             </div>
             <div className='col-md-5 py-4'>
-                <h2 className='memberName'>  Mrs. Name</h2>
-                <h3 className='role'>Her Role in Office</h3>
+                <h2 className='memberName'>  Mr. S. Ezhilmaran, B.A., LL.B.</h2>
+                <h3 className='role'>Legal Associate</h3>
+                <h5 className='experience'>4 Years of Experience</h5>
                 <div className='line my-3'></div>
-                <p>Rafael Sweet is the Founder and Lead Trial Attorney at Sweet Justice. He has earned millions of dollars in settlements and verdicts for his clients. He looks forward to litigating whenever necessary and preparing his cases for trial. Rafael has several years of experience representing some of the world’s largest corporations. Rafael has now spent years bringing that expertise to his representation of individuals seeking the maximum compensation for their injuries. Rafael loves being a personal injury lawyer and working to help peoples’ lives. Rafael attended UCLA and Loyola Law School and he is bilingual in English and Spanish. Rafael has successfully helped his clients recover what they deserve from corporations and insurance companies in many types of accidents. Rafael was listed in Top 100 Attorneys Magazine for 2022.</p>
+                <p>S. Ezhilmaran brings four years of hands-on experience in <span className='fw-bold'>all the mentioned practice areas</span> . He is dedicated to guiding clients through legal challenges with precision and a client-first approach. His expertise in handling legal documentation and court procedures ensures efficient case resolutions while maintaining a high standard of service.</p>
             </div>
          </div>
          <hr className='border border-1 border-danger-subtle my-5'></hr>
          <div className='row align-items-center justify-content-around'>
             <div className='col-md-5'>
-              <img className='img-fluid' src={female} /> 
+              <img className='img-fluid' src={male} /> 
             </div>
             <div className='col-md-5 py-4'>
-                <h2 className='memberName'>  Mrs. Name</h2>
-                <h3 className='role'>Her Role in Office</h3>
+                <h2 className='memberName'>  Mr. M. Kevin Jackson, B.A., LL.B.</h2>
+                <h3 className='role'>Junior Advocate</h3>
+                <h5 className='experience'>2 Years of Experience</h5>
                 <div className='line my-3'></div>
-                <p>Rafael Sweet is the Founder and Lead Trial Attorney at Sweet Justice. He has earned millions of dollars in settlements and verdicts for his clients. He looks forward to litigating whenever necessary and preparing his cases for trial. Rafael has several years of experience representing some of the world’s largest corporations. Rafael has now spent years bringing that expertise to his representation of individuals seeking the maximum compensation for their injuries. Rafael loves being a personal injury lawyer and working to help peoples’ lives. Rafael attended UCLA and Loyola Law School and he is bilingual in English and Spanish. Rafael has successfully helped his clients recover what they deserve from corporations and insurance companies in many types of accidents. Rafael was listed in Top 100 Attorneys Magazine for 2022.</p>
+                <p>M. Kevin Jackson is an emerging legal professional with expertise in all the mentioned practice areas. He is passionate about upholding justice, he is committed to providing proactive legal support and advocacy.</p>
             </div>
          </div>
         </div>

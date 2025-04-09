@@ -270,6 +270,12 @@
   font-weight: bold;
 }
 
+.experience {
+  color: #183862 !important;
+  font-weight: normal;
+  font-size: 14px;
+}
+
 .line {
   border: 1px solid #020202 !important;
 }
@@ -302,6 +308,12 @@
 
 .practiceAreas a{
   color: black;
+}
+
+.cardBody { 
+  min-height: 250px !important;
+  display: flex;
+  align-items: center;
 }
 
 /* practice areas tabs */
