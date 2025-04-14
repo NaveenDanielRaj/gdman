@@ -69,6 +69,8 @@ const PracticeAreasTab = ({activeTab}) => {
                 </p>
                 </li>
             </ul>
+
+            <hr></hr>
     </div>
     </>
   )
