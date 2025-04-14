@@ -12,7 +12,7 @@ const Navbar = () => {
     }
 
     useEffect(()=>{
-        let path = (location.pathname === '/') ? 1 :  (location.pathname === '/aboutUs') ? 2 : (location.pathname === '/practiceAreas' ||location.pathname === '/practiceAreas/family-law' || location.pathname === '/practiceAreas/divorce-law' || location.pathname === '/practiceAreas/probate-law' || location.pathname === '/practiceAreas/criminal-defence-law' || location.pathname === '/practiceAreas/traffic-defence-law' || location.pathname === '/practiceAreas/insurance-law') ? 3 :  (location.pathname === '/caseResults') ? 4 :  (location.pathname === '/contactUs') ? 5 : 1
+        let path = (location.pathname === '/') ? 1 :  (location.pathname === '/aboutUs') ? 2 : (location.pathname === '/practiceAreas' ||location.pathname === '/practiceAreas/find/best-family-lawyers-in-salem' || location.pathname === '/practiceAreas/find/best-divorce-lawyers-in-salem' || location.pathname === '/practiceAreas/find/best-probate-lawyers-in-salem' || location.pathname === '/practiceAreas/find/best-criminal-defense-lawyers-in-salem' || location.pathname === '/practiceAreas/find/best-traffic-defense-lawyers-in-salem' || location.pathname === '/practiceAreas/find/best-insurance-lawyers-in-salem') ? 3 :  (location.pathname === '/caseResults') ? 4 :  (location.pathname === '/contactUs') ? 5 : 1
         setActivePage(path)
     },[location.pathname])
 

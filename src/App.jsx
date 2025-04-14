@@ -30,12 +30,12 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/aboutUs" element={<About />} />
               <Route path="/practiceAreas" element={<PracticeAreas />} />
-              <Route path="/practiceAreas/family-law" element={<FamilyLaw />}/>
-              <Route path="/practiceAreas/divorce-law" element={<DivorceLaw />}/>
-              <Route path="/practiceAreas/probate-law" element={<ProbateLaw />}/>
-              <Route path="/practiceAreas/criminal-defence-law" element={<CriminalDefenceLaw />}/>
-              <Route path="/practiceAreas/traffic-defence-law" element={<TrafficDefenceLaw />}/>
-              <Route path="/practiceAreas/insurance-law" element={<InsuranceLaw />}/>
+              <Route path="/practiceAreas/find/best-family-lawyers-in-salem" element={<FamilyLaw />}/>
+              <Route path="/practiceAreas/find/best-divorce-lawyers-in-salem" element={<DivorceLaw />}/>
+              <Route path="/practiceAreas/find/best-probate-lawyers-in-salem" element={<ProbateLaw />}/>
+              <Route path="/practiceAreas/find/best-criminal-defense-lawyers-in-salem" element={<CriminalDefenceLaw />}/>
+              <Route path="/practiceAreas/find/best-traffic-defense-lawyers-in-salem" element={<TrafficDefenceLaw />}/>
+              <Route path="/practiceAreas/find/best-insurance-lawyers-in-salem" element={<InsuranceLaw />}/>
               <Route path="/caseResults" element={<CaseResults />} />
               <Route path="/contactUs" element={<Contact />} />
             </Routes>

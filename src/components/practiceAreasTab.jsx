@@ -10,7 +10,7 @@ const PracticeAreasTab = ({activeTab}) => {
     const handlePillClick = (pillIndex) => {
         setActivePill(pillIndex);
 
-        let navigatePage = (pillIndex == 1) ? "/practiceAreas/family-law" : (pillIndex == 2) ? "/practiceAreas/divorce-law" :  (pillIndex == 3) ? "/practiceAreas/probate-law" : (pillIndex == 4) ? "/practiceAreas/criminal-defence-law" :  (pillIndex == 5) ? "/practiceAreas/traffic-defence-law" :   (pillIndex == 6) ? "/practiceAreas/insurance-law" : "/practiceAreas"
+        let navigatePage = (pillIndex == 1) ? "/practiceAreas/find/best-family-lawyers-in-salem" : (pillIndex == 2) ? "/practiceAreas/find/best-divorce-lawyers-in-salem" :  (pillIndex == 3) ? "/practiceAreas/find/best-probate-lawyers-in-salem" : (pillIndex == 4) ? "/practiceAreas/find/best-criminal-defense-lawyers-in-salem" :  (pillIndex == 5) ? "/practiceAreas/find/best-traffic-defense-lawyers-in-salem" :   (pillIndex == 6) ? "/practiceAreas/find/best-insurance-lawyers-in-salem" : "/practiceAreas"
         navigate(navigatePage)
         
     };
