@@ -15,21 +15,26 @@ import hotel from '../assets/hotel.jpg'
 import quotes from '../assets/quotes.png'
 import user from '../assets/user.webp'
 
+import { Helmet } from 'react-helmet';
+
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>best lawyers near me| Goodman Law Firm</title>
+        <meta name="description" content=" Looking for best lawyers near you! Contact 9677745440 to Protect Your rights and freedom in salem" />
+        <meta name="keywords" content="best family lawyers near me, top divorce lawyers near me, best divorce lawyers in salem, top family lawyers in salem, probate lawyers near me, probate lawyers in salem, criminal defense attorney near me, top criminal defense lawyers in salem, driving offence lawyers in salem, criminal traffic lawyers near me, criminal traffic lawyer in salem, insurance claim lawyer near me, insurance lawyers in salem." />
+      </Helmet>
       <div className='homeBackground'>
-        <div className='redGradient row m-0'>
-          <div className='hero ms-md-5 col-md-8 text-start '>
+        <div className='redGradient row m-0 py-3 align-items-center justify-content-start'>
+          <div className='hero col-1'></div>
+          <div className='hero col-md-7 text-start '>
             <div className='heroContent'>
               <h1 className=''>Your Trusted Legal Advisors, <br></br>Every Step of the Way</h1>
-              <p className=''>At Goodman Law Firm, we provide experienced, compassionate, and results-driven legal counsel. Whether   you're navigating a complex legal matter or seeking expert advice, our dedicated attorneys are here to protect your rights and fight for the best possible outcome.</p>
-
-              <h3 className='pt-3'><i className="fas fa-solid fa-phone px-2 "></i> Contact Us Today for a Free Consultation. </h3>
-  
+              <p className=''>At Goodman Law Firm, we're here to guide you through legal challenges with experience, care, and a commitment to results. You just need honest advice, or you're dealing with a complicated case, our team of dedicated attorneys is ready to stand by your side, protect your rights, and help you move forward with confidence.</p>  
             </div>
           </div>
-          <div className='hero col-4'></div>
+          <div className='hero col-1'></div>
         </div>
       </div>
       <Quote  quote={"The law is reason, free from passion."} author={"Aristotle"} />
@@ -41,14 +46,14 @@ const Home = () => {
                 <div className='col-12 col-md-5 py-2 align-self-center order-md-first'>
                     <img className='img-fluid' width={500} src={whyus1} />
                 </div>
-                <div className='col-12 col-md-5 py-4 px-5 order-first '>
+                <div className='col-12 col-md-5 py-4 px-4 order-first '>
                   <div className='py-2'>
-                    <h4>Experience</h4>
-                    <p>I have been practicing law for over 25 years.</p>
+                    <h4>Experience You Can Count On</h4>
+                    <p>We bring deep knowledge and proven results to every case with over 14 years of legal practice.</p>
                   </div>
                   <div className='py-2 '>
-                    <h4>Compassion</h4>
-                    <p>I believe strongly in providing personal service and in giving my personal attention to my clients’ cases.</p>
+                    <h4>Compassionate Representation</h4>
+                    <p>We treat every client with respect, empathy, and the personal attention they deserve.</p>
                   </div>
                     
                   
@@ -58,14 +63,14 @@ const Home = () => {
                 <div className='col-12 col-md-5 py-2 align-self-center order-sm-last'>
                     <img className='img-fluid' width={500} src={whyus2} />
                 </div>
-                <div className='col-12 col-md-5 py-4 px-5 order-md-first'>
+                <div className='col-12 col-md-5 py-4 px-4 order-md-first'>
                   <div className='py-2'>
-                    <h4>Integrity</h4>
-                    <p>I believe that the privilege of practicing law carries with it an obligation to serve the profession and community.</p>
+                    <h4>Integrity at the Core</h4>
+                    <p>We believe in doing what's right — for our clients, our profession, and our community.</p>
                   </div>
                   <div className='py-2'>
-                    <h4>Trust</h4>
-                    <p>We have over two decades of significant experience in our respective areas of law.</p>
+                    <h4>A Legacy of Trust</h4>
+                    <p>For more than two decades, clients have trusted us to handle their most important legal matters with care and confidence.</p>
                   </div>
                     
                   
@@ -91,7 +96,7 @@ const Home = () => {
             </div>
             <div className='col-md-6 py-4 text-center d-flex align-items-center justify-content-center'> 
               <img alt='experience'  src={experience} width={30} height={30}/> 
-              <h5 className='px-3'>25 Years Experience</h5>
+              <h5 className='px-3'>14 Years Experience</h5>
             </div> 
             <div className='col-md-6 py-4 text-center d-flex align-items-center justify-content-center'> 
               <img alt='consult'  src={consult} width={30} height={30}/> 

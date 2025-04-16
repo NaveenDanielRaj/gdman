@@ -7,7 +7,25 @@ const Contact = () => {
   const { register, handleSubmit,formState : {errors} ,reset } = useForm();
 
 
-  const onFormSubmit = data => console.log(data);
+  const onFormSubmit = data => {
+    try{
+      console.log("data",data)
+      fetch("https://script.google.com/macros/s/AKfycbxYNp-8jxit3fnRIWuiLU5Yuo8_h1ubaFIIwVT4jYeLXFGa0BR36BJ32e33_IKXcD5C4A/exec",{
+        method: 'POST',
+        mode: 'no-cors', // Must be no-cors to bypass CORS issue with Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }).then((res)=>{
+        console.log("res",res)
+      }).catch((e)=>{
+        console.log("err",e)
+      })
+    }catch(e){
+      console.log(e)
+    }
+  };
 
 
   return (
@@ -96,37 +114,37 @@ const Contact = () => {
             <p className="fw-bold text-center">Need legal representation? Fill out our contact form with some information about your case or concern. We will respond to any inquiry as soon as possible.
             </p>
 
-            <div className="contactForm1 row align-items-center justify-content-center">
+            <div className="contactForm1 row align-items-center justify-content-around">
               <div className="col-12 col-md-6">
                 <form className="w-100 row" onSubmit={handleSubmit(onFormSubmit)}>
                   <div className=" col-12">
                     <div className="py-2">
-                      <label htmlFor="name">Name <span>(required)</span></label>
+                      <label htmlFor="Name">Name <span>(required)</span></label>
                     </div>
                     <div className="py-2">
                       <input
-                        className="input rounded-2 w-100"
-                        id="name"
+                        className="input rounded-2"
+                        id="Name"
                         type="text"
-                        {...register('name', { required: 'Name is required' })}
+                        {...register('Name', { required: 'Name is required' })}
                       />
                     </div>
                     <div className="py-1">
-                      {errors.name && <span className="error">*{errors.name.message}</span>}
+                      {errors.Name && <span className="error">*{errors.Name.message}</span>}
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="py-2">
-                      <label htmlFor="email">Email <span>(required)</span></label>
+                      <label htmlFor="Email">Email <span>(required)</span></label>
 
                     </div>
                     <div className="py-2">
                       <input
-                      className="input rounded-2 w-100"
-                        id="email"
+                      className="input rounded-2"
+                        id="Email"
                         type="email"
-                        {...register('email', {
+                        {...register('Email', {
                           required: 'Email is required',
                           pattern: {
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
@@ -136,20 +154,20 @@ const Contact = () => {
                       />
                     </div>
                     <div className="py-1">
-                      {errors.email && <span className="error">*{errors.email.message}</span>}
+                      {errors.Email && <span className="error">*{errors.Email.message}</span>}
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="py-2">
-                      <label htmlFor="mobile">Mobile Number <span>(required)</span></label>
+                      <label htmlFor="Phone">Mobile Number <span>(required)</span></label>
                     </div>
                     <div className="py-2">
                       <input
-                      className="input rounded-2 w-100"
-                        id="mobile"
+                      className="input rounded-2"
+                        id="Phone"
                         type="text"
-                        {...register('mobile', {
+                        {...register('Phone', {
                           required: 'Mobile number is required',
                           pattern: {
                             value: /^[0-9]{10}$/,
@@ -159,24 +177,24 @@ const Contact = () => {
                       />
                     </div>
                     <div className="py-1">
-                      {errors.mobile && <span className="error">*{errors.mobile.message}</span>}
+                      {errors.Phone && <span className="error">*{errors.Phone.message}</span>}
                     </div>
                   </div>
 
                   <div className="col-12">
                   <div className="py-2">
-                    <label htmlFor="message">How Can We Help? <span>(required)</span></label>
-                    <p className="py-1 w-75 lead">Please do not include confidential or sensitive information in your message. In the event that we are representing a party with opposing interests to your own, we may have a duty to disclose any information you provide to our client.</p>
+                    <label htmlFor="Message">How Can We Help? <span>(required)</span></label>
+                    <p className="py-1 w-100 lead">Please do not include confidential or sensitive information in your message. In the event that we are representing a party with opposing interests to your own, we may have a duty to disclose any information you provide to our client.</p>
                   </div>
                   <div className="">
                     <textarea
-                      className="input rounded-2 w-100 "
-                      id="message"
-                      {...register('message', { required: 'Message is required' })}
+                      className="input rounded-2"
+                      id="Message"
+                      {...register('Message', { required: 'Message is required' })}
                     ></textarea>
                   </div>
                   <div className="py-1">
-                    {errors.message && <span className="error">*{errors.message.message}</span>}
+                    {errors.Message && <span className="error">*{errors.Message.message}</span>}
                   </div>
                   </div>
 

@@ -59,24 +59,78 @@ const About = () => {
           </div>
 
           <div className='py-3'>
-            <p>Our years of experience, honed our legal process so that we are best prepared for any case developments. Our firm’s commitment to professionalism, civility, and open and honest communication allows us to provide our clients with the highest level of professional service.</p>
-          </div>
+            <h4 className='fw-bold pb-3 text-center'>Our Areas of Expertise</h4>
 
-          <div className='row justify-content-between align-items-center'>
-              <div className='col-md-5 py-3 d-flex justify-content-center'>
-                  <img className='img-fluid' src={aboutUs2} width={350} />
+            <div className='row py-3'>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                <h4> Family Law & Divorce Cases</h4>
+                </div>
+                
+                <p className='px-5'>Navigating family law matters can be challenging, but we offer dedicated support for divorce, child custody, alimony, and related issues.</p>
+
               </div>
-              <div className='col-md-5 py-3'>
-                <p>Our law office will persistently yet speedily handle your case. While we can’t control the speed of the court’s agenda, we will work to move your case along as fast as could be expected under the circumstances. We offer prepared guidance on the issues that emerge in disintegration activities. We will regard your desires and forcefully yet empathetically work to propel your inclinations while keeping up elevated expectations of legitimate, proficient, and moral honesty.</p>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4> Criminal Defense</h4>
+                </div>
+                <p className='px-5'>When facing criminal charges, having a strong defense team is crucial. We fight aggressively to protect your rights and achieve the best possible outcome for your case.</p>
+
               </div>
-          </div>
 
-          <div className='py-3'>
-           <p>We will devote our attention to your case, without delay, prepare documents, filings, and discovery tailored to your matter. We will keep you apprised of court dates and important deadlines in connection with your case and will be in contact regarding documents that you will need to read, authorize, and execute before we file them with the court.</p>
-          </div>
+              <div className='col-12'>
 
-          <div className='py-3'>
-             <p>We go above and beyond for their clientele, bringing new meaning to the attorney-client relationship. We will fight tirelessly to achieve the best result possible in your case.</p>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4> Civil Litigation</h4>
+                </div>
+                <p className='px-5'>From contract disputes to property conflicts, our civil lawyers provide strategic solutions to resolve disputes effectively and protect your legal interests.</p>
+
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4> Cheque Bounce & Financial Disputes</h4>
+                </div>
+                <p className='px-5'>If you are dealing with a cheque bounce case or financial disagreement, our team will take decisive action to safeguard your financial rights and ensure timely legal resolutions.</p>
+
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4>  Probate & Estate Planning</h4>
+                </div>
+               
+                <p className='px-5'>We assist in will execution, estate planning, and inheritance matters, offering clear guidance to protect your assets and secure your legacy.</p>
+
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4>   Traffic Offenses & Insurance Claims</h4>
+                </div>
+                <p className='px-5'>We provide legal representation for traffic violations and insurance disputes, ensuring you receive fair treatment and just compensation.</p>
+
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                  <i className="fa fa-solid fa-star px-2 fs-5"></i>
+                  <h4>  Dedicated Legal Support, Every Step of the Way</h4>
+                </div>
+               
+                <p className='px-5'>We take on the legal burden, allowing you to focus on what’s most important. Our firm works relentlessly to secure the best possible outcome, whether through negotiation or litigation. We maintain consistent communication, ensuring you are informed about court dates, deadlines, and necessary documents.</p>
+
+              </div>
+
+            </div>
           </div>
       </div>
 
