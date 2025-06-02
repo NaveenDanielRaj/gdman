@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import aboutUs1 from '../assets/aboutUs1.jpg'
 import male from '../assets/male.jpg'
 import client from '../assets/lawyer-client.jpg'
+import mohamed from '../assets/mohammed.jpg'
 
 
 import Quote from './quote'
@@ -292,6 +293,19 @@ const About = () => {
                 <h5 className='experience'>2 Years of Experience</h5>
                 <div className='line my-3'></div>
                 <p>M. Kevin Jackson is an emerging legal professional with expertise in all the mentioned practice areas. He is passionate about upholding justice, he is committed to providing proactive legal support and advocacy.</p>
+            </div>
+         </div>
+         <hr className='border border-1 border-danger-subtle my-5'></hr>
+         <div className='row align-items-center justify-content-around'>
+            <div className='col-md-5'>
+              <img className='img-fluid' src={mohamed}  alt='Mohamed Sikkanthar'/> 
+            </div>
+            <div className='col-md-5 py-4'>
+                <h2 className='memberName'>  Mr. M. Mohamed Sikkanthar, M.Com., B.Ed., LL.B.</h2>
+                <h3 className='role'>Senior Attorney</h3>
+                <h5 className='experience'>13 Years of Experience</h5>
+                <div className='line my-3'></div>
+                 <p>M. Mohamed Sikkanthar brings Thirteen years of hands-on experience in <span className='fw-bold'>all the mentioned practice areas</span> . He is dedicated to guiding clients through legal challenges with precision and a client-first approach. His expertise in handling legal documentation and court procedures ensures efficient case resolutions while maintaining a high standard of service.</p>
             </div>
          </div>
         </div>
