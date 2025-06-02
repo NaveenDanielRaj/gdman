@@ -3,7 +3,7 @@ import penImage from '../assets/featherPen.webp';
 
 const quote = ( {quote , author}) => {
   return (
-    <div className='quoteBackground d-flex py-3 justify-content-center align-items-center '>
+    <div className='quoteBackground d-flex py-3 px-3 justify-content-center align-items-center '>
         <div className='px-2'>
             <img className="pen"src={penImage} alt="pen" width={90} />
         </div>

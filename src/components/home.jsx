@@ -1,4 +1,5 @@
-
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import Quote from './quote'
 import whyus1 from '../assets/whyUs1.jpg'
@@ -10,14 +11,16 @@ import trust from '../assets/trust.png'
 import experience from '../assets/experience.png'
 import consult from '../assets/consult.png'
 
-import hotel from '../assets/hotel.jpg'
-
-import quotes from '../assets/quotes.png'
-import user from '../assets/user.webp'
 
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
+
+  const {pathname} = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo({top : 0 , behavior : "smooth"})
+  },[pathname])
   return (
     <>
       <Helmet>
@@ -37,7 +40,7 @@ const Home = () => {
           <div className='hero col-1'></div>
         </div>
       </div>
-      <Quote  quote={"The law is reason, free from passion."} author={"Aristotle"} />
+      <Quote  quote={"The concept of justice is inextricably linked to the principles of liberty, equality, and fraternity — the triune pillars of any democratic legal order."} author={"Dr.B.R.Ambedkar"} />
       <div className='whyUs'>
         <div className='container-sm  my-5'>
               <h2 className='fw-bold text-center'>Why Goodman Law Firm</h2>
@@ -107,86 +110,41 @@ const Home = () => {
       </div>
       <div className='ourClients py-5'>
         <div className='container-sm'>
-          <h2 className='fw-bold text-center'>Our Trustable Clients</h2>
+          <h2 className='fw-bold text-center'> District Courts We Serve</h2>
           <div className=' row d-flex m-0 p-0 align-items-center justify-content-between py-5'>
-            <div className=' col-12  col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
+            <div className=' col-12  col-md-6 col-lg-6 d-flex align-items-center justify-content-center px-4 pb-5 my-4'>
               <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
+                <img  src={"https://im.hunt.in/cg/City-Guide/barass.jpg"} height={200} className="card-img-top rounded-3" alt="client" />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
+                  <h5 className="card-title">Salem</h5>
+                  <p className="card-text">Combined Court Building, Yercaud Main Rd, Gurukkal Colony, Hasthampatti, Salem, Tamil Nadu 636007</p>
                 </div>
               </div>
             </div>
-            <div className=' col-12  col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
+            <div className=' col-12  col-md-6 col-lg-6 d-flex align-items-center justify-content-center px-4 pb-5 my-4'>
               <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
+                <img  src={"https://apnlive.com/wp-content/uploads/2023/03/Coimbatore-court-acid-attack.jpg"} height={200} className="card-img-top rounded-3" alt="client" />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
+                  <h5 className="card-title">Coimbatore</h5>
+                  <p className="card-text">XXXC+X5R, Bhasiyam Layout, Behind Pazhamudir Nilayam, Arts College Rd Combined Court Complex, Gopalapuram, Coimbatore, Tamil Nadu 641018</p>
                 </div>
               </div>
             </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
+            <div className=' col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center px-4 pb-5 my-4'>
               <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
+                <img  src={"https://cdnbbsr.s3waas.gov.in/s3ec022ef248c04979d6b3a7b283ec3dc3/uploads/2023/04/2023041333.jpg"} height={200} className="card-img-top rounded-3" alt="client" />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
+                  <h5 className="card-title">Puducherry</h5>
+                  <p className="card-text">WRH9+7G6, NH-45A, Orleanpet, Puducherry, 605005</p>
                 </div>
               </div>
             </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
+            <div className=' col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-center px-4 pb-5 my-4'>
               <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
+                <img  src={"https://wd-image.webdunia.com/image-conversion/process-aws.php?url=https://nonprod-media.webdunia.com/public_html/_media/ta/img/article/2024-07/16/full/1721121820-9399.jpg&w=&h=&outtype=webp"} height={200} className="card-img-top rounded-3" alt="client" />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
-                </div>
-              </div>
-            </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
-              <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
-                </div>
-              </div>
-            </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
-              <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
-                </div>
-              </div>
-            </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
-              <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
-                </div>
-              </div>
-            </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
-              <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
-                </div>
-              </div>
-            </div>
-            <div className=' col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center px-4 my-4'>
-              <div className='card rounded-4 text-center cardDetail p-3'>
-                <img  src={hotel} className="card-img-top rounded-3" alt="client" />
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Sample address  for hotel 5,<br></br> Los Angels ,<br></br> USA</p>
+                  <h5 className="card-title">Villupuram</h5>
+                  <p className="card-text">WFJM+Q56, Moovendar Nagar, Viluppuram, Tamil Nadu 605602</p>
                 </div>
               </div>
             </div>
@@ -199,59 +157,7 @@ const Home = () => {
           <h2 className='fw-bold text-center'>What Our Clients' Say</h2>
 
 
-          <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active d-none" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" className="d-none"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" className="d-none"></button>
-            </div>
-            <div className="  carousel-inner my-5">
-              <div className=" carousel-item active" data-bs-interval="10000">
-                <div className='review d-md-flex  d-block align-items-start justify-content-center text-center'>
-                    <img src={quotes} width={70} className='img-fluid' alt='quotes'/>
-                    <img src={user} width={110} height={100}  className='img-fluid rounded-circle py-4' alt='user'/>
-                    <div className=' py-4 px-3 text-start'>
-                        <h3>J. Robert</h3>
-                        <h6>USA</h6>
-                        <p>⭐⭐⭐⭐<br></br>I was really nervous about my case, but David made me feel at ease. His team was responsive, and I felt confident the entire time. We won the case, and I’m so grateful for his help.</p>
-                    </div>
-                </div>
-                
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <div className='review d-md-flex d-block align-items-start justify-content-center text-center'>
-                      <img src={quotes} width={70} className='img-fluid' alt='quotes'/>
-                      <img src={user} width={110} height={100}  className='img-fluid rounded-circle py-4' alt='user'/>
-                      <div className=' py-4 px-3 text-start'>
-                          <h3>J. Robert</h3>
-                          <h6>USA</h6>
-                          <p>⭐⭐⭐<br></br>I was really nervous about my case, but David made me feel at ease. His team was responsive, and I felt confident the entire time. We won the case, and I’m so grateful for his help.</p>
-                      </div>
-                  </div>
-                
-              </div>
-              <div className="carousel-item"  data-bs-interval="3000">
-                <div className='review d-md-flex  d-block align-items-start justify-content-center text-center'>
-                      <img src={quotes} width={70} className='img-fluid' alt='quotes'/>
-                      <img src={user} width={110} height={100}  className='img-fluid rounded-circle py-4' alt='user'/>
-                      <div className=' py-4 px-3 text-start'>
-                          <h3>J. Robert</h3>
-                          <h6>USA</h6>
-                          <p>⭐⭐⭐⭐⭐<br></br>I was really nervous about my case, but David made me feel at ease. His team was responsive, and I felt confident the entire time. We won the case, and I’m so grateful for his help.</p>
-                      </div>
-                  </div>
-                
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+        <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25558874'  width='100%' height='1000'></iframe>
         </div>
       </div>
     </>

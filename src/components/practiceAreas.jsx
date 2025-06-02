@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+
 import family from '../assets/family.jpg'
 import divorce from '../assets/divorce.webp'
 import probate from '../assets/probate.jpeg'
@@ -6,6 +9,13 @@ import traffic from '../assets/traffic.webp'
 import insurance from '../assets/insurance.png'
 
 const PracticeAreas = () => {
+
+  const {pathname} = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo({top : 0 , behavior : "smooth"})
+  },[pathname])
+
   return (
     <>
         <div className='practiceAreasBanner'>
@@ -28,7 +38,7 @@ const PracticeAreas = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-5 py-3">
+              {/* <div className="col-12 col-md-5 py-3">
                 <div className="card">
                   <img src={divorce} className="card-img-top" alt="divorce"  height={300} />
                   <div className="card-body text-center py-4">
@@ -36,7 +46,7 @@ const PracticeAreas = () => {
                     <a href="/practiceAreas/find/best-divorce-lawyers-in-salem">Learn More <i className="fa fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-12 col-md-5 py-3">
                 <div className="card">
                   <img src={probate} className="card-img-top" alt="probate"  height={300} />

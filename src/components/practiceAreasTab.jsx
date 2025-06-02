@@ -28,14 +28,14 @@ const PracticeAreasTab = ({activeTab}) => {
                     Family Law
                 </p>
                 </li>
-                <li className="nav-item practiceAreaItems" role="presentation">
+                {/* <li className="nav-item practiceAreaItems" role="presentation">
                 <p
                     className={`nav-link ${activePill === 2 ? 'active practiceAreasIndivideal' : 'notPracticeAreasIndivideal'}`}
                     onClick={() => handlePillClick(2)}
                 >
                    Divorce Law
                 </p>
-                </li>
+                </li> */}
                 <li className="nav-item practiceAreaItems" role="presentation">
                 <p
                     className={`nav-link ${activePill === 3 ? 'active practiceAreasIndivideal' : 'notPracticeAreasIndivideal'}`}

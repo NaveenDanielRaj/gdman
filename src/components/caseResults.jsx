@@ -1,25 +1,34 @@
-
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const CaseResults = () => {
+
+  const {pathname} = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo({top : 0 , behavior : "smooth"})
+  },[pathname])
+
+  
   return (
     <>
       <div className="container-sm">
-        <div class="ag-format-container">
-          <div class="ag-courses_box d-block">
-            <div class="ag-courses_item">
-              <div  class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
+        <div className="ag-format-container">
+          <div className="ag-courses_box d-block">
+            <div className="ag-courses_item">
+              <div  className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"></div>
 
-                <div class="ag-courses-item_title">
+                <div className="ag-courses-item_title">
                   Case 1 Heading
                 </div>
                   <div className="case_description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem quidem, aliquam laudantium fugit maxime tempora fugiat ut at nemo ratione id perferendis repellat autem excepturi voluptates cum temporibus?</p>
                   </div>
 
-                <div class="ag-courses-item_date-box">
+                <div className="ag-courses-item_date-box">
                   Registered Date :
-                  <span class="ag-courses-item_date">
+                  <span className="ag-courses-item_date">
                     04.11.2022
                   </span>
                 </div>
@@ -30,20 +39,20 @@ const CaseResults = () => {
               </div>
             </div>
 
-            <div class="ag-courses_item">
-              <div  class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
+            <div className="ag-courses_item">
+              <div  className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"></div>
 
-                <div class="ag-courses-item_title">
+                <div className="ag-courses-item_title">
                   Case 2 Heading
                 </div>
                   <div className="case_description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem quidem, aliquam laudantium fugit maxime tempora fugiat ut at nemo ratione id perferendis repellat autem excepturi voluptates cum temporibus?</p>
                   </div>
 
-                <div class="ag-courses-item_date-box">
+                <div className="ag-courses-item_date-box">
                   Registered Date :
-                  <span class="ag-courses-item_date">
+                  <span className="ag-courses-item_date">
                     04.11.2022
                   </span>
                 </div>
@@ -53,20 +62,20 @@ const CaseResults = () => {
               </div>
             </div>
 
-            <div class="ag-courses_item">
-              <div class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"></div>
 
-                <div class="ag-courses-item_title">
+                <div className="ag-courses-item_title">
                   Case 3 Heading
                 </div>
                   <div className="case_description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem quidem, aliquam laudantium fugit maxime tempora fugiat ut at nemo ratione id perferendis repellat autem excepturi voluptates cum temporibus?</p>
                   </div>
 
-                <div class="ag-courses-item_date-box">
+                <div className="ag-courses-item_date-box">
                   Registered Date :
-                  <span class="ag-courses-item_date">
+                  <span className="ag-courses-item_date">
                     04.11.2022
                   </span>
                 </div>
@@ -77,20 +86,20 @@ const CaseResults = () => {
               </div>
             </div>
 
-            <div class="ag-courses_item">
-              <div  class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
+            <div className="ag-courses_item">
+              <div  className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"></div>
 
-                <div class="ag-courses-item_title">
+                <div className="ag-courses-item_title">
                   Case 4 Heading
                 </div>
                   <div className="case_description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem quidem, aliquam laudantium fugit maxime tempora fugiat ut at nemo ratione id perferendis repellat autem excepturi voluptates cum temporibus?</p>
                   </div>
 
-                <div class="ag-courses-item_date-box">
+                <div className="ag-courses-item_date-box">
                   Registered Date :
-                  <span class="ag-courses-item_date">
+                  <span className="ag-courses-item_date">
                     04.11.2022
                   </span>
                 </div>
@@ -100,20 +109,20 @@ const CaseResults = () => {
               </div>
             </div>
 
-            <div class="ag-courses_item">
-              <div class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
+            <div className="ag-courses_item">
+              <div className="ag-courses-item_link">
+                <div className="ag-courses-item_bg"></div>
 
-                <div class="ag-courses-item_title">
+                <div className="ag-courses-item_title">
                   Case 5 Heading
                 </div>
                   <div className="case_description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid exercitationem quidem, aliquam laudantium fugit maxime tempora fugiat ut at nemo ratione id perferendis repellat autem excepturi voluptates cum temporibus?</p>
                   </div>
 
-                <div class="ag-courses-item_date-box">
+                <div className="ag-courses-item_date-box">
                   Registered Date :
-                  <span class="ag-courses-item_date">
+                  <span className="ag-courses-item_date">
                     04.11.2022
                   </span>
                 </div>

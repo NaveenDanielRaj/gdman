@@ -25,16 +25,19 @@ const Footer = () => {
                         <li className='footerLinks'><Link to='/aboutUs'>About</Link></li>
                         <li className='footerLinks'><Link to='/practiceAreas'>Practice Areas</Link></li>
                         <li className='footerLinks'><Link to='/caseResults'>Case results</Link></li>
-                        <li className='footerLinks'><Link to='/contactUs'>Contect Us</Link></li>
+                        <li className='footerLinks'><Link to='/contactUs'>Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className=' col-12  col-md-6 col-lg-4  px-5 py-4 text-center text-md-start '>
                     <div >
 
                         <h4 className='linkHead'>Reach Us</h4>
-                        <p>Call or Text : <span className='contact'>(123) 123-1234</span></p>
+                        <p>Call or Text : <span className='contact'><br></br>(+91) 99521-04194<br></br>(+91) 96777-45440<br></br>(+91) 98425-92171<br></br>(+91) 83002-15996</span></p>
                         <p >Email : <span className='contact'>goodmanlawfirm@gmail.com</span></p>
                     </div>
+                </div>
+
+                <div className=' col-12  col-md-6 col-lg-4  px-5 py-4 text-center text-md-start '>
 
                     <div>
 

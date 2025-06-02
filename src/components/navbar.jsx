@@ -19,8 +19,8 @@ const Navbar = () => {
   return (
     <>
         <div className='m-0 p-0 border-bottom border-dark border-1'>
-            <nav className=" navbar navbar-expand-lg bg-white w-100 px-5 border-2 border-dark">
-                <div className="container-fluid container-fluid align-items-center d-block d-lg-flex px-5  ">
+            <nav className=" navbar navbar-expand-lg bg-white w-100 px-2 px-lg-5 border-2 border-dark">
+                <div className="container-fluid container-fluid align-items-center d-block d-lg-flex px-lg-5  ">
                     <div className='d-flex  justify-content-between align-items-center' >
                         <div>
                             <a className="navbar-brand" href="/">

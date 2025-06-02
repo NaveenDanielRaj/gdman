@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect} from 'react'
+import React, { Suspense, useEffect , useState} from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactGA from "react-ga4";
@@ -19,8 +19,23 @@ const TrafficDefenceLaw = React.lazy(()=>import('./components/trafficDefence'))
 const InsuranceLaw = React.lazy(()=>import('./components/insurance'))
 
 import Loading from './components/loading'
+import FormModal from './components/FormModal';
 
 function App() {
+
+  const [showModal, setShowModal] = useState(true);
+
+  useEffect(() => {
+    const submitted = localStorage.getItem('formSubmitted');
+    if (submitted === 'true') {
+      setShowModal(false);
+    }
+  }, []);
+
+  const handleFormSubmit = () => {
+    localStorage.setItem('formSubmitted', 'true');
+    setShowModal(false);
+  };
 
   useEffect(()=>{
     ReactGA.initialize("G-L7ZY7JEBPL");
@@ -32,21 +47,24 @@ function App() {
     <>
         <Router>
           <Suspense fallback={<Loading />}>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/aboutUs" element={<About />} />
-              <Route path="/practiceAreas" element={<PracticeAreas />} />
-              <Route path="/practiceAreas/find/best-family-lawyers-in-salem" element={<FamilyLaw />}/>
-              <Route path="/practiceAreas/find/best-divorce-lawyers-in-salem" element={<DivorceLaw />}/>
-              <Route path="/practiceAreas/find/best-probate-lawyers-in-salem" element={<ProbateLaw />}/>
-              <Route path="/practiceAreas/find/best-criminal-defense-lawyers-in-salem" element={<CriminalDefenceLaw />}/>
-              <Route path="/practiceAreas/find/best-traffic-defense-lawyers-in-salem" element={<TrafficDefenceLaw />}/>
-              <Route path="/practiceAreas/find/best-insurance-lawyers-in-salem" element={<InsuranceLaw />}/>
-              <Route path="/caseResults" element={<CaseResults />} />
-              <Route path="/contactUs" element={<Contact />} />
-            </Routes>
-            <Footer />
+            <div className={`main-content ${showModal ? 'blur' : ''}`}>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/aboutUs" element={<About />} />
+                <Route path="/practiceAreas" element={<PracticeAreas />} />
+                <Route path="/practiceAreas/find/best-family-lawyers-in-salem" element={<FamilyLaw />}/>
+                <Route path="/practiceAreas/find/best-probate-lawyers-in-salem" element={<ProbateLaw />}/>
+                <Route path="/practiceAreas/find/best-criminal-defense-lawyers-in-salem" element={<CriminalDefenceLaw />}/>
+                <Route path="/practiceAreas/find/best-traffic-defense-lawyers-in-salem" element={<TrafficDefenceLaw />}/>
+                <Route path="/practiceAreas/find/best-insurance-lawyers-in-salem" element={<InsuranceLaw />}/>
+                <Route path="/caseResults" element={<CaseResults />} />
+                <Route path="/contactUs" element={<Contact />} />
+              </Routes>
+              <Footer />
+            </div>
+
+            {showModal && <FormModal onSubmit={handleFormSubmit} />}
           </Suspense>
         </Router>
     </>

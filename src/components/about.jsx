@@ -1,12 +1,21 @@
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import aboutUs1 from '../assets/aboutUs1.jpg'
-import aboutUs2 from '../assets/aboutUs2.jpg'
 import male from '../assets/male.jpg'
-import female from '../assets/female.png'
+import client from '../assets/lawyer-client.jpg'
+
 
 import Quote from './quote'
 
 const About = () => {
+
+  const {pathname} = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo({top : 0 , behavior : "smooth"})
+  },[pathname])
+
   return (
     <>
       <div className='aboutUsBanner'>
@@ -32,30 +41,138 @@ const About = () => {
             
             <div className="row m-0 py-4 justify-content-around">
               <div className="col-lg-5 my-4 p-4 mx-2 card card-1">
-                <h3 className="card__title">Experienced Legal Team</h3>
+                <h3 className="card__title fw-bold">Over a Decade of Trusted Legal Service
+                </h3>
                 <p className="card__apply">
-                   We are the advocates with 10+ years of  experience in various practice areas, we provide skilled representation tailored to your needs
+                At Goodman Law Firm, we believe that strong relationships are the foundation of effective legal representation. For more than 10 years, we have proudly served individuals, families, and businesses with a clear mission: to offer personalized, compassionate, and results-driven legal services that truly make a difference.
+                <br></br>
+                <br></br>
+                Our journey began with a simple goal — to be more than just legal advisors. We wanted to be trusted partners, guiding clients through some of the most challenging moments of their lives with expertise, honesty, and genuine care. Today, with multiple branches and a team of dedicated professionals, we are proud to have built a firm that reflects these founding values.
+
                 </p>
               </div>
               <div className=" col-lg-5 my-4 mx-2 p-4 card card-2">
-                <h3 className="card__title">Client-Centered Approach</h3>
+                <h3 className="card__title fw-bold">Experience You Can Trust</h3>
                 <p className="card__apply">
-                 We handle the legal complexities so you can focus on what truly matters in your life.
+                With over a decade of real-world experience, our attorneys have developed a deep understanding of the legal system, successfully representing clients across a wide range of cases — from family law and personal injury to business law and civil litigation.Each case is different, and so is every client. That’s why we don't believe in "one-size-fits-all" solutions. At Goodman Law Firm, we tailor our strategies to meet your specific goals, ensuring that every step we take is aligned with your best interests.
+
+              <br></br>
+              <br></br>
+              Our legal team stays up to date on the latest developments in the law, combining traditional practices with innovative approaches to achieve the best possible outcomes. Whether negotiating a settlement, drafting critical legal documents, or representing you in court, our experience will work for you — and your future.
+
                 </p>
               </div>
               <div className=" col-lg-5 my-4 mx-2  p-4 card card-3">
-                <h3 className="card__title">Persistent & Proactive</h3>
+                <h3 className="card__title fw-bold">Accessible Legal Services Through Multiple Branches
+                </h3>
                 <p className="card__apply">
-                   Our firm diligently works to resolve your case as swiftly and effectively as possible.
+                One of the ways we stay connected with the communities we serve is through our multiple office locations. No matter where you are, there’s likely a Goodman Law Firm branch close by, offering the same level of care, professionalism, and dedication that defines us.
+                <br></br>
+                <br></br>
+
+                Each branch is staffed with knowledgeable attorneys and friendly support teams ready to assist you. We make it convenient for you to schedule consultations, meet your lawyer face-to-face, and feel confident knowing your legal team is never far away.
+
+                <br></br>
+                <br></br>
+
+                Our growing presence is a reflection of the trust our clients place in us — and the results we continue to deliver.
+
                 </p>
               </div>
               <div className="col-lg-5 my-4 mx-2  p-4 card card-4">
-                <h3 className="card__title">Transparent & Honest Communication </h3>
+                <h3 className="card__title fw-bold">A Personalized Approach to Every Client
+                </h3>
                 <p className="card__apply">
-                    We keep you informed at every step, ensuring clarity and confidence in the legal process.
+                At Goodman Law Firm, we understand that facing a legal issue can be overwhelming. That's why we prioritize open communication, respect, and empathy from the first meeting to the final resolution.
+                We take the time to listen to your story, answer your questions, and explain your options in a clear, straightforward manner. No complicated legal jargon — just honest conversations and sound advice you can count on.
+                <br></br>
+                <br></br>
+                We are committed to making the legal process as smooth and stress-free as possible, giving you peace of mind during uncertain times. With us, you’ll always know where your case stands, what to expect next, and that you have a strong advocate in your corner.
+
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+          <Quote  quote={"Law is the greatest disinfectant of corruption, injustice, and inequality."} author={"Dr.B.R.Ambedkar"} />
+        <div className='container-sm aboutUs py-5'>
+
+        <div className='py-3'>
+            <h4 className='fw-bold pb-3 text-center'>Our Promise to You            </h4>
+            <p className='text-start'>When you choose Goodman Law Firm, you’re choosing a firm that truly cares about your future.<br></br><br></br>Here’s what you can expect from us:
+            </p>
+            <div className='row py-3'>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Experience that matters : </span> Over 10 years of winning results and courtroom success.
+                </p>
+                </div>
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Personalized attention : </span> Tailored strategies for your unique situation.
+                </p>
+                </div>
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Accessibility : </span> Multiple offices for your convenience and peace of mind.
+                </p>
+                </div>
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Compassionate service: </span>  Genuine care for you and your family.
+                </p>
+                </div>
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Transparent communication </span>   No surprises — just clear, honest guidance.
+                </p>
+                </div>
+              </div>
+
+              <div className='col-12'>
+                <div className='d-flex alig-items-center'>
+                <i className="fa fa-solid fa-scale-balanced px-2 fs-4"></i>
+                <p><span className='fw-bold fs-5'>Relentless advocacy: </span> A team that fights hard for your rights and goals.
+                </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div className='py-3'>
+            <h4 className='fw-bold pb-3 text-center'>Join the Goodman Law Firm Family</h4>
+
+            <div className='row justify-content-around align-items-center my-5'>
+              <div className='col-md-5 pb-4 d-flex justify-content-center'>
+                  <img className='img-fluid' src={client} width={450} />
+              </div>
+              <div className='col-md-6'>
+                <p>Choosing the right law firm can make all the difference. At Goodman Law Firm, we are honored by the trust our clients place in us and are driven every day to exceed expectations.
+                  <br></br>
+                  <br></br>
+                  If you're looking for legal representation that treats you like a person — not just a case — we invite you to experience the Goodman difference.
+                  <br></br>
+                  <br></br>
+                  Reach out to one of our conveniently located offices today. We’re ready to listen, ready to help, and ready to stand by your side.
+                </p>
+              </div>
+          </div>
+
           </div>
 
           <div className='py-3'>
