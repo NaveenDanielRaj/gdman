@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          protocol: ftp         # use FTPS for encrypted and passive-friendly transfers
+          protocol: ftps         # use FTPS for encrypted and passive-friendly transfers
           port: 21
           server-dir: /  # <-- replace if your actual path is different
           log-level: verbose
