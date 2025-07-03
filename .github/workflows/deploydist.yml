@@ -3,7 +3,7 @@ name: Deploy dist folder to FTP
 on:
   push:
     branches:
-      - main  # Triggers on any push to main
+      - main
 
 jobs:
   deploy:
@@ -19,4 +19,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist
+          local-dir: ./dist/
