@@ -20,3 +20,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
+          protocol: ftp
+          passive: true
+          timeout: 60000
