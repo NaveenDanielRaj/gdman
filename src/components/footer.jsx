@@ -32,7 +32,7 @@ const Footer = () => {
                     <div >
 
                         <h4 className='linkHead'>Reach Us</h4>
-                        <p>Call or Text : <span className='contact'><br></br>(+91) 99521-04194<br></br>(+91) 96777-45440<br></br>(+91) 98425-92171<br></br>(+91) 83002-15996</span></p>
+                        <p>Call or Text : <span className='contact'><br></br>(+91) 99521-04194<br></br>(+91) 93614-26017<br></br>(+91) 98425-92171<br></br>(+91) 99449-60508</span></p>
                         <p >Email : <span className='contact'>goodmanlawfirm@gmail.com</span></p>
                     </div>
                 </div>

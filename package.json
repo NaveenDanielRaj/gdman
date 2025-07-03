@@ -12,6 +12,7 @@
     "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
+    "basic-ftp": "^5.0.5",
     "bootstrap": "^5.3.3",
     "chalk": "^5.4.1",
     "cli-progress": "^3.12.0",
