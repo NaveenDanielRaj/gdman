@@ -301,7 +301,7 @@ const About = () => {
               <img className='img-fluid' src={mohamed}  alt='Mohamed Sikkanthar'/> 
             </div>
             <div className='col-md-5 py-4'>
-                <h2 className='memberName'>  Mr. M. Mohamed Sikkanthar, M.Com., B.Ed., LL.B.</h2>
+                <h2 className='memberName'>Mr. M. Mohamed Sikkanthar, M.Com., B.Ed., LL.B.</h2>
                 <h3 className='role'>Senior Attorney</h3>
                 <h5 className='experience'>13 Years of Experience</h5>
                 <div className='line my-3'></div>
