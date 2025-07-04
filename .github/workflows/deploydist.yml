@@ -1,26 +1,30 @@
-name: Deploy dist folder to FTP
+name: Upload dist/ folder to cPanel Web Disk
 
 on:
   push:
     branches:
-      - main
+      - main  # Trigger only on main branch changes
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout the main branch
+        uses: actions/checkout@v3
 
-      - name: Upload dist/ to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          protocol: ftps         # use FTPS for encrypted and passive-friendly transfers
-          port: 21
-          server-dir: /  # <-- replace if your actual path is different
-          log-level: verbose
+      - name: Install WebDAV client (cadaver)
+        run: sudo apt-get install cadaver -y
+
+      - name: Upload dist/ folder to cPanel Web Disk
+        env:
+          WEBDISK_USERNAME: ${{ secrets.WEBDISK_USERNAME }}
+          WEBDISK_PASSWORD: ${{ secrets.WEBDISK_PASSWORD }}
+          WEBDISK_URL: ${{ secrets.WEBDISK_URL }}
+        run: |
+          echo "lcd dist" > upload.txt
+          echo "cd public_html" >> upload.txt
+          echo "mput *" >> upload.txt
+          echo "quit" >> upload.txt
+
+          echo -e "${WEBDISK_PASSWORD}\n" | cadaver "${WEBDISK_URL}" < upload.txt
