@@ -1,0 +1,39 @@
+name: 🚀 Deploy dist folder to cPanel Web Disk
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛒 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 📂 Verify dist folder exists
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "❌ 'dist' folder not found"
+            exit 1
+          fi
+
+      - name: 🛠 Install cadaver (WebDAV CLI)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cadaver
+
+      - name: 🚀 Upload dist/ to WebDAV
+        env:
+          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
+          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
+        run: |
+          cd dist
+          {
+            echo "$WEBDAV_USERNAME"
+            echo "$WEBDAV_PASSWORD"
+            echo "cd /"
+            echo "mput *"
+            echo "quit"
+          } | cadaver https://walkonweb.in:2078
